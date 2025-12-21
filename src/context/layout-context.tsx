@@ -43,7 +43,7 @@ const reducer = (state: any, action: any) => {
   }
 };
 
-// 包裹组件
+// 布局上下文 全局的状态依赖
 export const LayoutProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, dispatch] = useReducer(reducer, {});
 
