@@ -1,6 +1,7 @@
-'use client';
+// 'use client';
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import { MainPage } from "./main";
 
 // import { useDisplay, useValues } from '@/context/layout-context';
 
@@ -11,9 +12,10 @@ export default function SwapPage() {
     // const dispatch = useDisplay();
 
     return (
-        <div>
-            <h1>SwapPage</h1>
-            <Button className="ml-2" onClick={() => console.log('点击了Swap按钮')}>Swap</Button>
+        <div className="h-full flex justify-center">
+            {/* <h1>SwapPage</h1> */}
+            <MainPage />
+            {/* <Button className="ml-2" onClick={() => console.log('点击了Swap按钮')}>Swap</Button> */}
         </div>
     );
 }
