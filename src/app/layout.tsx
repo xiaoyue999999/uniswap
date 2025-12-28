@@ -3,16 +3,9 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
-import { WagmiProvider } from 'wagmi';
-import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import { HeaderPage } from '@/components/Header';
-import { config } from '@/createConfig';
 import { Providers } from '@/components/Providers';
 import { LayoutProvider } from '@/context/layout-context';
-
-// import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-
-const queryClient = new QueryClient();
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
